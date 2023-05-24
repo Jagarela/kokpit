@@ -1,0 +1,9 @@
+{{ range .Site.Menus.main }}
+{{ if eq .Name $.Name }}
+<strong>
+{{ end }}
+<a href="{{ .URL }}" style="min-width: 1000px">{{ .Name }}</a>
+{{ if eq .Name $.Name }}
+</strong>
+{{ end }}
+{{ end }}

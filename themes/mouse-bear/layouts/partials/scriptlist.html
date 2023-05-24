@@ -1,0 +1,11 @@
+{{/* <script src="/scripts/theme.js"></script> */}}
+{{ with .Site.Params.scripts }}
+  {{ range . }}
+    <script src="/scripts/{{- . -}}"></script>
+  {{ end }}
+{{ end }}
+{{ with .Page.Params.scripts }}
+  {{ range . }}
+    <script src="/scripts/{{- . -}}"></script>
+  {{ end }}
+{{ end }}

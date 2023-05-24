@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/styles/theme.css">
+{{ with .Site.Params.stylesheets }}
+  {{ range . }}
+    <link rel="stylesheet" href="/styles/{{- . -}}">
+  {{ end }}
+{{ end }}
+{{ with .Page.Params.stylesheets }}
+  {{ range . }}
+    <link rel="stylesheet" href="/styles/{{- . -}}">
+  {{ end }}
+{{ end }}

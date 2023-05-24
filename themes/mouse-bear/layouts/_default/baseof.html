@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{- block "title" . }}{{ if ne .IsHome true }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}{{- end }}</title>
+  {{- partial "favicon.html" . -}}
+  {{- partial "stylelist.html" . -}}
+  {{- partial "scriptlist.html" . -}}
+
+  {{- partial "custom_head.html" . -}}
+</head>
+
+<body>
+  <header>
+    {{- partial "header.html" . -}}
+  </header>
+  <main>
+    {{- block "main" . }}{{- end }}
+  </main>
+  <footer>
+    {{- partial "footer.html" . -}}
+  </footer>
+
+  {{- partial "custom_body.html" . -}}
+</body>
+
+</html>
