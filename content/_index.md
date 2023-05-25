@@ -11,3 +11,5 @@ Kokpit paczy
 Fibi miauczy
 
 ![Kokpit](media/fibi.jpg)
+
+Jadzia jest słodka
