@@ -1,5 +1,6 @@
 {{ define "main" }}
 <content>
+  {{ .Content }}
   <ul class="posts-list">
     {{ range where .Pages "Params.postponed" "!=" true }}
     <li>
