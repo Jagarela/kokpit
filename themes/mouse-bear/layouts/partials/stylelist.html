@@ -1,11 +1,11 @@
-<link rel="stylesheet" href="/styles/theme.css">
+<link rel="stylesheet" href={{"styles/theme.css" | absURL}}>
 {{ with .Site.Params.stylesheets }}
   {{ range . }}
-    <link rel="stylesheet" href="/styles/{{- . -}}">
+    <link rel="stylesheet" href={{(printf "styles/%s" .) | absURL}}>
   {{ end }}
 {{ end }}
 {{ with .Page.Params.stylesheets }}
   {{ range . }}
-    <link rel="stylesheet" href="/styles/{{- . -}}">
+    <link rel="stylesheet" href="{{(printf "styles/%s" .) | absURL}}">
   {{ end }}
 {{ end }}

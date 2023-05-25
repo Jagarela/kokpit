@@ -4,5 +4,10 @@ menu: "main"
 weight: 1
 ---
 
-kokpitkokpitkokpitkokpit
-i fibi
+Kokpit paczy
+
+![Kokpit](media/kokpit.jpg)
+
+Fibi miauczy
+
+![Kokpit](media/fibi.jpg)
