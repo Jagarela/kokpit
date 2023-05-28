@@ -1,9 +1,24 @@
 {{ range .Site.Menus.main }}
-{{ if eq .Name $.Name }}
-<strong>
-{{ end }}
-<a href="{{ .URL }}" style="min-width: 1000px">{{ .Name }}</a>
-{{ if eq .Name $.Name }}
-</strong>
-{{ end }}
+
+  {{ if eq .Name $.Name }}
+    <strong>
+  {{ end }}
+
+  {{ if eq (.Page.Param "rozwijanie") false }}
+    <a href="{{ .URL }}" style="min-width: 1000px">{{ .Name }}</a>
+  {{ else }}
+    <div class="dropdown">
+      <div><a href="{{ .URL }}" style="min-width: 1000px">{{ .Name }}</a></button>
+      <div class="dropdown-content">
+        {{ range .Page.Pages }}
+          <a href="{{ .Permalink }}">{{ .Name }}</a>
+        {{ end }}
+      </div>
+   </div> 
+ {{ end }}
+  
+  {{ if eq .Name $.Name }}
+    </strong>
+  {{ end }}
+
 {{ end }}
