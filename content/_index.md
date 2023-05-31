@@ -1,6 +1,7 @@
 ---
 title: "Strona główna"
-menu: "main"
+
+
 weight: 1
 rozwijanie: false
 ---
