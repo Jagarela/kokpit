@@ -1,6 +1,6 @@
 ---
 title: "Tajny wpis dla samca"
-
+menu: "main"
 weight: 2
 
 ---
