@@ -1,8 +1,14 @@
 ---
-title: "Dla samca"
-menu: "main"
+title: "Tajny wpis dla samca"
+
 weight: 2
 
 ---
 
-Co te samice kombinują? 
+
+![Kokpit](media/Baza.jpg)
+
+Myślałeś że zdradzę sekrety (⌐■_■)
+
+
+
