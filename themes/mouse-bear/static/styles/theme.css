@@ -7,7 +7,7 @@ body {
 
     margin: auto;
     padding: 20px;
-    max-width: 720px;
+    max-width: 710px;
     text-align: left;
     background: rgb(131,58,180);
     background: linear-gradient(135deg, rgba(131,58,180,1) 0%, rgba(177,47,131,1) 23%, rgba(253,29,29,1) 50%, rgba(252,149,56,1) 84%, rgba(252,176,69,1) 300%); 
@@ -63,7 +63,7 @@ a {
 
 .title {
     text-decoration: none;
-    border: 0;
+    border: 20;
 }
 
 .title span {
@@ -71,7 +71,7 @@ a {
 }
 
 nav a {
-    margin-right: 10px;
+    margin-right: 1px;
 }
 
 textarea {
@@ -96,7 +96,7 @@ img {
 }
 
 code {
-    padding: 2px 5px;
+    padding: 20px 15px;
     background-color: #f2f2f2;
 }
 @media (prefers-color-scheme: dark) {
