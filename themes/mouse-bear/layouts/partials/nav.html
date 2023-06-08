@@ -8,7 +8,7 @@
     <a href="{{ .URL }}" style="min-width: 1000px">{{ .Name }}</a>
   {{ else }}
     <div class="dropdown">
-      <div><a href="{{ .URL }}" style="min-width: 1000px">{{ .Name }}</a></button>
+      <div><a href="{{ .URL }}" style="min-width: 1000px">{{ .Name }}</a></button></div>
       <div class="dropdown-content">
         {{ range .Page.Pages }}
           <a href="{{ .Permalink }}">{{ .Name }}</a>
