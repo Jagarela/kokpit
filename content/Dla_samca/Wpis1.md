@@ -1,14 +1,7 @@
 ---
-title: "Tajny wpis dla samca"
-menu: "main"
-weight: 2
-
+title: "Wpis 1"
+date: 2023-05-28T23:05:34+02:00
+draft: false
 ---
 
-
-![Kokpit](media/Baza.jpg)
-
-Myślałeś że zdradzę sekrety (⌐■_■)
-
-
-
+![KOMTEK](/kokpit/media/Baza.jpg)
